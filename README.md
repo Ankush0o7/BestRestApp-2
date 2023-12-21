@@ -22,6 +22,21 @@ To create a `Book` object, utilize the constructor by providing values for `id`,
 
 ```java
 Book book = new Book(1, "Sample Book", "Sample Author", 29.99, "Sample Genre");
-
+```
 #### Displaying a Book Information
 Utilize the toString() method to get a string representation of the Book object.
+```java
+String bookInfo = book.toString();
+System.out.println(bookInfo);
+```
+
+### Accessing and Modifying Attributes
+
+Retrieve and modify attributes using getter and setter methods.
+
+```java
+// Get book name
+String bookName = book.getName();
+
+// Set book price
+book.setPrice(19.99);
